@@ -1,0 +1,31 @@
+.heading{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.ant-form-horizontal .ant-form-item-label {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ant-modal-title {
+    font-weight: 600 !important;
+    font-size: 21px !important;
+    text-align: center !important;
+}
+
+.ant-modal-header{
+    border-bottom: 1px solid #000 !important;
+}
+
+.anticon-check{
+    border: 1px solid green !important;
+    border-radius: 50% !important;
+    padding: 6px !important;
+    background-color: green !important;
+    color: #fff !important;
+}
+
+.docmodel   .ant-modal-body {
+    padding: 0px !important;
+}

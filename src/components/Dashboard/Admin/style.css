@@ -1,0 +1,16 @@
+.gutter-box {
+    padding: 8px 0;
+    background: #00a0e9;
+  }
+  [data-theme="light"] .gutter-box {
+    background: #028ac8;
+  }
+  .transformyaxis {
+    position: absolute;
+    margin-top: 200px;
+    margin-left: -35px;
+    color:#8c8ea2;
+    transform: rotate(
+      -90deg
+      );
+  }

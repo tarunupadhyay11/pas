@@ -1,0 +1,107 @@
+.dash-layout {
+    height: 100% !important;
+    width: 100%;
+    min-height: 100% !important;
+    font-family: "Inv Maison Neue","Maison Neue",-apple-system,BlinkMacSystemFont,"Open Sans",open-sans,sans-serif;
+   }
+
+   #components-layout-demo-custom-trigger .trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  #components-layout-demo-custom-trigger .trigger:hover {
+    color: #1890ff;
+  }
+  
+  #components-layout-demo-custom-trigger .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
+  .site-layout .site-layout-background {
+    background: #fff;
+    
+  }
+
+  .logo {
+    height: 32px;
+    margin: 16px;
+    background: rgba(255, 255, 255, 0.3);
+    font-weight: bold;
+    font-size: 21px;
+  }
+
+  .trigger {
+    padding: 0 24px;
+    font-size: 18px;
+    line-height: 64px;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .trigger:hover {
+    color: #1890ff;
+  }
+
+  .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) .ant-menu-item-selected {
+    background-color: #fff !important;
+    border-right-color: #fff !important;
+}
+
+.ant-menu-dark .ant-menu-item-selected .ant-menu-item-icon + span, .ant-menu-dark .ant-menu-item-selected .anticon + span { 
+    color: #000 !important;
+}
+
+/* .ant-menu-dark.ant-menu-dark:not(.ant-menu-horizontal) {
+    background-color: #eeeeee !important;
+    
+    
+} */
+
+.ant-menu-dark .ant-menu-item, .ant-menu-dark .ant-menu-item-group-title, .ant-menu-dark .ant-menu-item > a, .ant-menu-dark .ant-menu-item > span > a {
+    color: #000 !important;
+    border-bottom: 1px solid #000 !important;
+}
+
+.ant-layout-sider {
+    background: #ffffff !important;
+}
+
+.menu {
+    border: 1px solid #000 !important;
+    min-height: 100% !important;
+    background: #ffffff !important;
+}
+
+.ant-menu-dark .ant-menu-item {
+    background-color: #eeeeee !important;
+    height: 35px !important;
+    margin-bottom:0px !important;
+    margin-top: 0px !important;
+}
+
+.ant-table-thead > tr > th {
+    background-color: #eeeeee !important;
+}
+
+.ant-table-tbody > tr > td {
+    border-bottom: 1px solid #000 !important;
+}
+.ant-table table {
+    border: 1px solid #000 !important;
+}
+
+.ant-upload.ant-upload-drag {
+  width: 150px !important;
+  height: 130px !important;
+  text-align: center;
+  background: #fafafa;
+  border: 1px dashed #d9d9d9;
+  border-radius: 50% !important;
+  margin-left: 155px !important;
+}

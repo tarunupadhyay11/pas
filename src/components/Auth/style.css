@@ -1,0 +1,79 @@
+/* .layout {
+ height: 100% !important;
+ width: 60%;
+ margin: 0 auto;
+ border:1px solid #000 !important;
+ background-color: #fff !important;
+ font-family: "Inv Maison Neue","Maison Neue",-apple-system,BlinkMacSystemFont,"Open Sans",open-sans,sans-serif;
+} */
+
+.login-header {
+    text-align: center;
+    background: #fff !important;
+    height: 120px !important;
+    line-height: 00px !important;
+    font-family: "Inv Maison Neue","Maison Neue",-apple-system,BlinkMacSystemFont,"Open Sans",open-sans,sans-serif;
+  }
+
+  .header-h1{
+     margin-top: 50px;
+  }
+  
+  .login-logo {
+    margin-top: 30px;
+    height: 100px;
+    pointer-events: none;
+  }
+
+  .content {
+    width: 100%;
+  margin-top: 100px;
+  
+}
+
+  .login-container-col {
+    background: #eeeeee;
+    border: 1px solid #000;
+    margin-top: 15px;
+  }
+
+  .login-form {
+    margin-top: 25px !important;
+  }
+  .login-btn {
+    padding: 4px 30px !important;
+    font-size: 15px !important;
+    color: #000 !important;
+    background: #dddddd !important;
+    border-color: #000 !important;
+  }
+
+  .forgot-a {
+      text-align: right !important;
+      text-decoration: underline !important
+  }
+
+  .login-input {
+      border: 1px solid #000 !important;
+  }
+
+  #root {
+    height: 100% !important;
+    background: #eeeeee !important;
+}
+
+.ant-form-item {
+    margin-bottom: 10px !important;
+}
+
+.ant-form-item-label > label {
+    height: 32px;
+    color: #000 !important;
+    font-size: 14px;
+}
+
+.login-span {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 15px;
+}
