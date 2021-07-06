@@ -5,6 +5,7 @@ import Dashboard from './Dashboard/index';
 import DocumentForm from './DocumentForm/index';
  import SignPdf from './SignPdf/index'
  import AllProcess from './Process/index';
+ import ManageTemplates from './Templates/index';
 
 function Routers() {
   return (
@@ -14,6 +15,7 @@ function Routers() {
             <Route path="/login" component={Login} />
             <Route path="/dashboard" component={Dashboard} />
             <Route path="/all-process" component={AllProcess} />
+            <Route path="/manage-template" component={ManageTemplates} />
             <Route path="/submit-document" component={DocumentForm} />
             <Route path="/sign-pdf" component={SignPdf} />
         </Switch>

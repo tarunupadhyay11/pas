@@ -5,7 +5,8 @@ import './style.css';
 import { useSelector, useDispatch } from 'react-redux';
 import { loginUser, authSelector, clearState } from './authSlice';
 import toast, { Toaster } from 'react-hot-toast';
-import { Layout,Form, Input, Button, Checkbox,Row,Col,Radio,Space } from 'antd';
+import { LoadingOutlined,SyncOutlined } from '@ant-design/icons';
+import { Layout,Form, Input, Button, Checkbox,Row,Col,Radio,Space,Spin } from 'antd';
 const { Header, Footer, Sider, Content } = Layout;
 const {ReactDraggable: Draggable, ReactDOM} = window;
 const layout = {
@@ -29,11 +30,14 @@ const tailForgotLayout = {
     span: 15,
   },
 }
+const antIcon = <SyncOutlined style={{ fontSize: 24 }} spin />;
 
 const Login = () => {
   const [value, setValue] = React.useState(3);
   const dispatch = useDispatch();
   let history = useHistory()
+
+  const [isLoading, setLoading] = React.useState(false);
 
   const { isFetching, isSuccess, isError, errorMessage,user } = useSelector(
     authSelector
@@ -48,10 +52,12 @@ const Login = () => {
   useEffect(() => {
     
     if (isError) {
+      setLoading(false);
       toast.error(errorMessage);
       dispatch(clearState());
     }
     if (isSuccess) {
+      setLoading(false);
       toast.success('Logged in successfully');
      dispatch(clearState());
      history.push('/dashboard');
@@ -73,6 +79,7 @@ const Login = () => {
       "password": "cityslicka"
   };
   localStorage.setItem('usertype', value);
+  setLoading(true);
     dispatch(loginUser(data));
     // if(value == 3 || value==2){
     // localStorage.setItem('usertype', value);
@@ -109,6 +116,7 @@ const Login = () => {
       <img src={logo} className="login-logo" alt="logo" />
       </Header>
       <Content className="content">
+      <Spin indicator={antIcon} style={{textAlign:'center',width:'100%'}} spinning={isLoading} />
       <Toaster
   position="top-center"
   reverseOrder={false}

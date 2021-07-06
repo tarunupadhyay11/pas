@@ -1,13 +1,17 @@
 import React from 'react';
-import { Link ,useHistory} from "react-router-dom";
+import { Link ,useHistory,Redirect} from "react-router-dom";
+import { useSelector, useDispatch } from 'react-redux';
+import { logout } from '../Auth/authSlice';
 import { Layout, Menu, Breadcrumb,Button } from 'antd';
 const { Item,SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
 
 export default function Navbar() {
   let history = useHistory();
+  const dispatch = useDispatch();
 
   function logOut() {
+    dispatch(logout());
     history.push("/login");
   }
 
@@ -22,7 +26,7 @@ export default function Navbar() {
         <Menu.Item key="4">User Roles</Menu.Item>
         <Menu.Item key="5">Manage Users</Menu.Item>
         <Menu.Item key="6">Sub Admin</Menu.Item>
-        <Menu.Item key="/login"  style={{position:'absolute',right:0}}><Link to="/login"> <Button  style={{border:'1px solid #000',color:"#000"}} ghost>Log Out</Button></Link></Menu.Item>
+        <Menu.Item key="/login" onClick={() => { logOut()}} style={{position:'absolute',right:0}}> <Button  style={{border:'1px solid #000',color:"#000"}} ghost>Log Out</Button></Menu.Item>
       </Menu>
 
       {/* <Link to="/login"> <Button  style={{border:'1px solid #000',color:"#000"}} ghost>Log Out</Button></Link> */}
